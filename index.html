@@ -7,19 +7,18 @@
 <meta name="description" content="ClawBox: the plug-and-play AI assistant box. NVIDIA Jetson Orin Nano, 67 TOPS, OpenClaw pre-installed. ClawBox AI delivers private, self-hosted AI for €399.">
 <meta name="keywords" content="clawbox, clawbox ai, clawbox 3, clawbox app, clawbox github, openclaw box, ai assistant box, clawbo">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://openclawhardware.dev/">
+<link rel="canonical" href="https://clawbox.tech/">
 <meta property="og:title" content="ClawBox – The AI Assistant Box by OpenClaw Hardware">
 <meta property="og:description" content="ClawBox: plug-and-play AI box with NVIDIA Jetson Orin Nano. 67 TOPS, €399.">
-<meta property="og:url" content="https://openclawhardware.dev/">
+<meta property="og:url" content="https://clawbox.tech/">
 <meta property="og:image" content="https://openclawhardware.dev/clawbox-1.webp">
 <meta property="og:type" content="product">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ClawBox – The AI Assistant Box by OpenClaw Hardware">
 <meta name="twitter:description" content="ClawBox: plug-and-play AI box with NVIDIA Jetson Orin Nano. 67 TOPS, €399.">
 <meta name="twitter:image" content="https://openclawhardware.dev/clawbox-1.webp">
-<meta http-equiv="refresh" content="8;url=https://openclawhardware.dev/">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Product","name":"ClawBox","description":"ClawBox AI assistant box: NVIDIA Jetson Orin Nano 8GB, 512GB NVMe, OpenClaw pre-installed. 67 TOPS, 15W.","brand":{"@type":"Brand","name":"OpenClaw Hardware"},"image":"https://openclawhardware.dev/clawbox-1.webp","url":"https://openclawhardware.dev/","offers":{"@type":"Offer","price":"399","priceCurrency":"EUR","availability":"https://schema.org/PreOrder"}}
+{"@context":"https://schema.org","@type":"Product","name":"ClawBox","description":"ClawBox AI assistant box: NVIDIA Jetson Orin Nano 8GB, 512GB NVMe, OpenClaw pre-installed. 67 TOPS, 15W.","brand":{"@type":"Brand","name":"OpenClaw Hardware"},"image":"https://openclawhardware.dev/clawbox-1.webp","url":"https://clawbox.tech/","offers":{"@type":"Offer","price":"399","priceCurrency":"EUR","availability":"https://schema.org/PreOrder"}}
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -44,8 +43,41 @@ body{font-family:'Space Grotesk',sans-serif;background:#0d1117;color:#c9d1d9;min
 .cta-section h2{color:#c9d1d9;font-size:1.3rem;margin-bottom:20px}
 .cta-section a{display:inline-block;padding:14px 36px;background:#1f6feb;color:#fff;text-decoration:none;border-radius:6px;font-size:1rem;font-weight:700;transition:background .2s}
 .cta-section a:hover{background:#58a6ff}
-.redirect{text-align:center;padding:20px;color:#484f58;font-size:.8rem}
+.how-it-works{margin:60px auto;max-width:1000px;padding:0 20px}
+.how-it-works h2{color:#c9d1d9;margin-bottom:30px;font-size:1.8rem;text-align:center}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.step{background:#161b22;border-radius:6px;padding:24px;text-align:center;border:1px solid #30363d}
+.step-number{display:inline-block;width:40px;height:40px;background:#58a6ff;color:#fff;border-radius:50%;line-height:40px;font-weight:700;margin-bottom:16px}
+.step h3{color:#58a6ff;margin-bottom:12px;font-size:1.1rem}
+.step p{color:#8b949e;font-size:.95rem}
+.comparison-section{margin:60px auto;max-width:1000px;padding:0 20px}
+.comparison-section h2{color:#c9d1d9;margin-bottom:30px;font-size:1.8rem;text-align:center}
+.comparison-table{width:100%;border-collapse:collapse;background:#161b22;border-radius:6px;overflow:hidden;border:1px solid #30363d}
+.comparison-table th{background:#1f6feb;color:#fff;padding:16px;text-align:left;font-weight:600}
+.comparison-table td{padding:16px;border-bottom:1px solid #30363d;color:#8b949e}
+.comparison-table tr:nth-child(even){background:#0d1117}
+.comparison-table tr:last-child td{border-bottom:none}
+.comparison-table .highlight{color:#58a6ff;font-weight:600}
+.faq-section{margin:60px auto;max-width:800px;padding:0 20px}
+.faq-section h2{color:#c9d1d9;margin-bottom:30px;font-size:1.8rem;text-align:center}
+.faq-item{margin-bottom:16px}
+.faq-item details{background:#161b22;border-radius:6px;border:1px solid #30363d;overflow:hidden}
+.faq-item summary{padding:20px;cursor:pointer;color:#58a6ff;font-weight:600;font-size:1.05rem;transition:background .2s}
+.faq-item summary:hover{background:#0d1117}
+.faq-item details[open] summary{background:#0d1117;border-bottom:1px solid #30363d}
+.faq-item .faq-content{padding:20px;color:#8b949e;border-top:1px solid #30363d}
+.related-section{margin:60px auto;max-width:1000px;padding:40px 20px;background:#161b22;border-radius:6px;border:1px solid #30363d}
+.related-section h2{color:#c9d1d9;margin-bottom:30px;font-size:1.5rem;text-align:center}
+.related-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;text-align:center}
+.related-links a{color:#58a6ff;text-decoration:none;padding:12px;border-radius:6px;transition:background .2s,color .2s}
+.related-links a:hover{background:#0d1117;color:#79c0ff}
+@media (max-width: 768px) {
+.comparison-table{font-size:.85rem}
+.comparison-table th,.comparison-table td{padding:10px}
+}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9FY8Q06EX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Q9FY8Q06EX');</script>
 </head>
 <body>
 <div class="header">
@@ -89,18 +121,189 @@ body{font-family:'Space Grotesk',sans-serif;background:#0d1117;color:#c9d1d9;min
 
 <p class="seo-block">The ClawBox ships to the EU, US, Canada, Australia, Switzerland, Norway, and the UK. Every ClawBox includes a 30-day satisfaction guarantee. Whether you're looking for ClawBox AI for home automation, a ClawBox app for business productivity, or just want to explore the ClawBox GitHub project — it all starts here. ClawBox: one box, zero subscriptions.</p>
 
-<section class="cta-section">
-<h2>Get Your ClawBox — €399 One-Time</h2>
-<a href="https://openclawhardware.dev/">Order ClawBox Now →</a>
+<section class="how-it-works">
+<h2>How ClawBox AI Hardware Works</h2>
+<div class="steps">
+<div class="step">
+<div class="step-number">1</div>
+<h3>Unbox & Connect</h3>
+<p>ClawBox comes pre-configured. Connect power and ethernet, and the NVIDIA Jetson boots OpenClaw automatically with all AI models ready.</p>
+</div>
+<div class="step">
+<div class="step-number">2</div>
+<h3>Access ClawBox App</h3>
+<p>Open the ClawBox app (web interface) or connect to Telegram/WhatsApp/Discord. Your ClawBox AI hardware is immediately responsive.</p>
+</div>
+<div class="step">
+<div class="step-number">3</div>
+<h3>AI Processing</h3>
+<p>ClawBox processes all requests locally on the NVIDIA Jetson's 67 TOPS. No cloud servers, no latency, no privacy concerns.</p>
+</div>
+<div class="step">
+<div class="step-number">4</div>
+<h3>Customize & Expand</h3>
+<p>Install additional models, create custom automations, or modify the open-source ClawBox GitHub codebase for your specific needs.</p>
+</div>
+</div>
 </section>
 
+<section class="comparison-section">
+<h2>ClawBox vs Other AI Solutions</h2>
+<table class="comparison-table">
+<thead>
+<tr>
+<th>Solution</th>
+<th class="highlight">ClawBox</th>
+<th>OpenAI API</th>
+<th>Google AI Studio</th>
+<th>DIY Raspberry Pi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Setup Time</td>
+<td class="highlight">5 minutes</td>
+<td>1 hour</td>
+<td>1 hour</td>
+<td>8+ hours</td>
+</tr>
+<tr>
+<td>Monthly Cost</td>
+<td class="highlight">€0</td>
+<td>€50-200</td>
+<td>€30-150</td>
+<td>€0</td>
+</tr>
+<tr>
+<td>AI Performance</td>
+<td class="highlight">67 TOPS local</td>
+<td>Cloud-dependent</td>
+<td>Cloud-dependent</td>
+<td>2 TOPS</td>
+</tr>
+<tr>
+<td>Privacy</td>
+<td class="highlight">100% local</td>
+<td>Data sent to OpenAI</td>
+<td>Data sent to Google</td>
+<td>100% local</td>
+</tr>
+<tr>
+<td>Internet Required</td>
+<td class="highlight">No (optional)</td>
+<td>Yes, always</td>
+<td>Yes, always</td>
+<td>No</td>
+</tr>
+<tr>
+<td>ClawBox App</td>
+<td class="highlight">Built-in</td>
+<td>Build your own</td>
+<td>Build your own</td>
+<td>Build your own</td>
+</tr>
+<tr>
+<td>Multi-Platform</td>
+<td class="highlight">Telegram/WhatsApp/Discord</td>
+<td>API only</td>
+<td>API only</td>
+<td>Manual setup</td>
+</tr>
+</tbody>
+</table>
+</section>
 
-<div class="related-sites" style="text-align:center;padding:30px 20px;border-top:1px solid rgba(255,107,53,0.15)">
-  <p style="color:#6b7280;font-size:.85rem;margin-bottom:10px">Related Resources:</p>
-  <a href="https://ai-assistant-box.com" style="color:#ff6b35;text-decoration:none;margin:0 10px">AI Assistant Box</a>
-  <a href="https://local-ai-box.com" style="color:#ff6b35;text-decoration:none;margin:0 10px">Local AI Box</a>
-  <a href="https://plug-and-play-ai.com" style="color:#ff6b35;text-decoration:none;margin:0 10px">Plug & Play AI</a>
+<section class="faq-section">
+<h2>ClawBox AI Hardware FAQ</h2>
+
+<div class="faq-item">
+<details>
+<summary>What makes ClawBox different from other AI assistant hardware?</summary>
+<div class="faq-content">
+<p>ClawBox combines powerful NVIDIA Jetson AI hardware (67 TOPS) with pre-installed OpenClaw software and a sleek professional enclosure. Unlike DIY projects, ClawBox works out-of-the-box. Unlike cloud AI, all processing stays local on your ClawBox AI hardware.</p>
 </div>
-<p class="redirect">⏳ Redirecting to openclawhardware.dev...</p>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>How does ClawBox AI compare to ChatGPT or other cloud services?</summary>
+<div class="faq-content">
+<p>ClawBox AI processes everything locally on your hardware, providing instant responses without internet dependency. While cloud services offer larger models, ClawBox gives you complete privacy, no monthly fees, and works offline. The ClawBox app provides the same conversational interface.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>Can I access the ClawBox GitHub repository and customize it?</summary>
+<div class="faq-content">
+<p>Yes! ClawBox runs on OpenClaw, which has 184K+ stars on GitHub and uses an MIT license. You can modify the code, add features, install new models, or contribute back to the ClawBox GitHub community. Full source code access included.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>What is the ClawBox app and how does it work?</summary>
+<div class="faq-content">
+<p>The ClawBox app is the web-based interface to your ClawBox AI hardware. Access it from any device on your network to chat with your AI, manage settings, install models, and monitor system performance. Think of it as your ClawBox control panel.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>How powerful is ClawBox 3 compared to previous versions?</summary>
+<div class="faq-content">
+<p>ClawBox 3 features the NVIDIA Jetson Orin Nano with 67 TOPS of AI performance — a massive upgrade over earlier versions. This ClawBox AI hardware can run larger language models, process multiple conversations simultaneously, and handle complex automation tasks in real-time.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>Is ClawBox suitable for business use or just personal projects?</summary>
+<div class="faq-content">
+<p>ClawBox AI hardware works excellently for business applications: customer service automation, document processing, internal AI assistants, and workflow automation. The one-time cost (€399) makes it economical vs monthly AI subscriptions, while keeping sensitive business data on-premises.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>What support and documentation comes with ClawBox?</summary>
+<div class="faq-content">
+<p>ClawBox includes comprehensive documentation, the ClawBox app for easy management, access to the active ClawBox GitHub community, and 30-day setup support. The open-source nature means extensive community resources and continuous improvements.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>How do I get started with ClawBox after purchasing?</summary>
+<div class="faq-content">
+<p>Connect power and ethernet to your ClawBox AI hardware, wait 2 minutes for boot, then access the ClawBox app via your browser. Add your Telegram bot token or messaging platform credentials, and start chatting with your AI assistant. Setup takes under 5 minutes.</p>
+</div>
+</details>
+</div>
+</section>
+
+<section class="related-section">
+<h2>Related Resources</h2>
+<div class="related-links">
+<a href="https://ai-assistant-box.com">AI Assistant Box Solutions</a>
+<a href="https://plug-and-play-ai.com">Plug & Play AI Hardware</a>
+<a href="https://local-ai-box.com">Local AI Box Guide</a>
+<a href="https://openclawhardware.dev/compare">Compare AI Hardware</a>
+<a href="https://openclawhardware.dev/setup-guide">ClawBox Setup Guide</a>
+<a href="https://openclawhardware.dev/faq">ClawBox FAQ</a>
+</div>
+</section>
+
+<section class="cta-section">
+<h2>Get Your ClawBox — €399 One-Time</h2>
+<a href="https://openclawhardware.dev/" target="_blank">Get ClawBox →</a>
+</section>
 </body>
 </html>
